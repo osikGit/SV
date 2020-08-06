@@ -1,3 +1,4 @@
+/*Працюємо з відступами сторінки і хедеру*/
 body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,9 @@ header {
 	margin-top: 15px;
 	background-color: white;
 }
+/*Працюємо з відступами сторінки і хедеру*/
+
+/*Оформлення елементів хедеру*/
 #logo {
 	color: #195C8A;
 	display: inline;
@@ -47,10 +51,14 @@ header {
 	color: #3D3C3C;
 	font-size: 13pt;
 }
+/*Оформлення елементів хедеру*/
+
+/*Оформлення головного навігаційного меню*/
 .navigation {
 	background-color: #132D3A;
 	height: 100px;
 }
+/*Робимо список по горизонталі(розділи)*/
 .list {
 	margin: 0;
 	padding: 0;
@@ -65,6 +73,7 @@ header {
 	color: #AEAEAE;
 	text-decoration: none;
 }
+/*Надаємо розділам стилі*/
 .links_pages {
 	width: 300px;
 	text-align: center;
@@ -89,6 +98,7 @@ header {
 .Alarm ul {
 	display: none;
 }
+/*Робота з розділами при наведенні(дропдаун)*/
 .Alarm:hover {
 	background-color: #224153;
 }
@@ -140,6 +150,9 @@ header {
 .VideoSecurityOptions:hover {
 	background-color: #132D3A;
 }
+/*Робота з розділами при наведенні(дропдаун)*/
+
+/*Оформлюємо головний пошук сайту*/
 .main_search {
 	background-color: #224252;
 	color: #AEAEAE;
@@ -169,6 +182,10 @@ header {
 .main_search:-ms-input-placeholder {
 	color: #AEAEAE;
 }
+/*Оформлюємо головний пошук сайту*/
+/*Оформлення головного навігаційного меню*/
+
+/*Оформлення відстеження твого місцезнаходження на сайті*/
 .steps {
 	font-size: 15pt;
 	margin-left: 100px;
@@ -184,6 +201,7 @@ header {
 .steps a:last-child {
 	color: #3591C0;	
 }
+/* Оформлення товарів, якими набиваємо сайт */
 figcaption p {
 	margin: 0;
 }
@@ -211,17 +229,29 @@ figcaption p {
 	font-family: "Myriad Pro Bold";
 	font-size: 30px;
 }
+/* Робимо відступи і розприділяємо вільне місце між товарами так, щоб получилось 5 рядів по 5 товарів на 1 сторінку */
+main {
+	display: flex;
+	flex-wrap: wrap; 
+}
 figure {
-	float: left;
-	margin-left: 150px;
+	margin-left: 163px;
 }
-.imgFirst {
-	margin-left: 0 auto;
+/* Робимо відступи і розприділяємо вільне місце між товарами так, щоб получилось 5 рядів по 5 товарів на 1 сторінку */
+
+/* Розмітка фотографій */
+figure>div {
+	width: 150px;
+	height: 150px;
 }
+/* Оформлення товарів, якими набиваємо сайт */
+
+/* Робимо по центру сторінки внизу сторінки, між якими будемо переключатись для перегляду товарів */
 .product-pages {
-	float: left;
+	display: flex;
+	justify-content: center;
 	font-family: "Myriad Pro";
-	font-size: 20px;
+	font-size: 25px;
 }
 .product-pages li {
 	display: inline-block;
@@ -230,8 +260,30 @@ figure {
 }
 .product-pages li a {
 	text-decoration: none;
-	color: black;
+	color: #3F3D3D;
 }
+.pages-numbers.now a {
+	color: #195C8A;
+}
+/* Оформлення стрілок */
+.arrow {
+	border: solid #3F3D3D;;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+.left-arrow {
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.right-arrow {
+	transform: rotate(135deg);
+    -webkit-transform: rotate(-45deg);
+}
+/* Оформлення стрілок */
+/* Робимо по центру сторінки внизу сторінки, між якими будемо переключатись для перегляду товарів */
+
+/*Шрифти*/
 @font-face {
 font-family: "Arial Rounded MT Bold";  
 src: url("../../../Fonts/Contacts.ttf") format("truetype"); 
@@ -252,3 +304,4 @@ src: url("../../../Fonts/MyriadProRegular.otf") format("opentype");
 font-style: normal; 
 font-weight: normal;
 }
+/*Шрифти*/

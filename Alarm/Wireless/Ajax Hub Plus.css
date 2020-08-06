@@ -1,3 +1,4 @@
+/*Працюємо з відступами сторінки і хедеру*/
 body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +8,9 @@ header {
 	margin-top: 15px;
 	background-color: white;
 }
+/*Працюємо з відступами сторінки і хедеру*/
+
+/*Оформлення елементів хедеру*/
 #logo {
 	color: #195C8A;
 	display: inline;
@@ -47,10 +51,14 @@ header {
 	color: #3D3C3C;
 	font-size: 13pt;
 }
+/*Оформлення елементів хедеру*/
+
+/*Оформлення головного навігаційного меню*/
 .navigation {
 	background-color: #132D3A;
 	height: 100px;
 }
+/*Робимо список по горизонталі(розділи)*/
 .list {
 	margin: 0;
 	padding: 0;
@@ -65,6 +73,7 @@ header {
 	color: #AEAEAE;
 	text-decoration: none;
 }
+/*Надаємо розділам стилі*/
 .links_pages {
 	width: 300px;
 	text-align: center;
@@ -89,6 +98,7 @@ header {
 .Alarm ul {
 	display: none;
 }
+/*Робота з розділами при наведенні(дропдаун)*/
 .Alarm:hover {
 	background-color: #224153;
 }
@@ -140,6 +150,9 @@ header {
 .VideoSecurityOptions:hover {
 	background-color: #132D3A;
 }
+/*Робота з розділами при наведенні(дропдаун)*/
+
+/*Оформлюємо головний пошук сайту*/
 .main_search {
 	background-color: #224252;
 	color: #AEAEAE;
@@ -169,6 +182,10 @@ header {
 .main_search:-ms-input-placeholder {
 	color: #AEAEAE;
 }
+/*Оформлюємо головний пошук сайту*/
+/*Оформлення головного навігаційного меню*/
+
+/*Оформлення відстеження твого місцезнаходження на сайті*/
 .steps {
 	font-size: 15pt;
 	margin-left: 100px;
@@ -184,17 +201,28 @@ header {
 .steps a:last-child {
 	color: #3591C0;	
 }
+/*Оформлення відстеження твого місцезнаходження на сайті*/
+
+/*Оформлення головної частини сторінки товару*/
+
+/*Надаємо ділення сторінки на 3 частини*/
 .product{
 	display: flex;
 	justify-content: space-around;
 	align-items: stretch;
 	margin-top: 50px;
 }
+/*Надаємо ділення сторінки на 3 частини*/
+
+/*Розмітка фотографії*/
 .img-info img,
 .testImg {
 	width: 450px;
 	height: 450px;
 }
+/*Розмітка фотографії*/
+
+/*Надаємо стилі ціні, дзвінку*/
 .price {
 	color: #195C8A;
 	font-family: "Myriad Pro Bold";
@@ -203,8 +231,6 @@ header {
 	margin-left: 150px;
 	margin-bottom: 40px;
 	margin-top: 10px;
-	width: 310px;
-	height: 50px;
 }
 .call {
 	color: #3F3D3D;
@@ -212,33 +238,28 @@ header {
 	margin: 0;
 	font-family: "Arial";
 	font-weight: bold;
-	width: 460px;
-	height: 40px;
 }
+/*Надаємо стилі ціні, дзвінку*/
+
+/*Надаємо стилі центральній частині сторінки товару*/
 .name {
 	color: #3F3D3D;
 	font-size: 50px;
 	font-family: "Arial";
 	font-weight: bold;
 	margin: 0;
-	width: 674px;
-	height: 58px;
 }
 .art {
 	color: #7A7979;
 	margin: 0;
 	font-family: "Myriad Pro";
 	font-style: italic;
-	width: 674px;
-	height: 20px;
 }
 .char h3 {
 	font-family: "Arial";
 	font-weight: bold;
 	color: #3F3D3D;
 	font-size: 30px;
-	width: 674px;
-	height: 34px;
 }
 .info {
 	font-family: "Arial";
@@ -246,6 +267,9 @@ header {
 	line-height: 1.5;
 	font-size: 20px;
 }
+/*Надаємо стилі центральній частині сторінки товару*/
+
+/*Оформлення переглянутих товарів*/
 .last-products {
 	color: #3F3D3D;
 	font-family: "Arial";
@@ -297,6 +321,9 @@ figure {
 	margin-top: 5px;
 	margin-left: 35px;
 }
+/* Оформлення переглянутих товарів */
+
+/*Шрифти*/
 @font-face {
 font-family: "Arial Rounded MT Bold";  
 src: url("../../Fonts/Contacts.ttf") format("truetype"); 
@@ -317,3 +344,4 @@ src: url("../../Fonts/MyriadProRegular.otf") format("opentype");
 font-style: normal; 
 font-weight: normal;
 }
+/*Шрифти*/
