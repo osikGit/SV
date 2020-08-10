@@ -1,54 +1,91 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>SmartVision</title>
 	<link rel="stylesheet" href="Main.css">
+	<link rel="stylesheet" href="Font Awesome/css/font-awesome.min.css">
 </head>
 <body>
 	<header>
-		<h1 id="logo">ЛОГО</h1>
 		
-		<div class="contacts">
-			<span class="number1">(097) 150 7055</span>
-			<span class="number2">(063) 150 7055</span>
-			<span class="gmail">robota@gmail.com</span>
+		<div class="logo"><a href="Main.html"><img src="Logo.png" alt="Logo"></a></div>
+
+		<div class="header_numbers">
+			<div class="number1">(097) 160 50 77</div>
+			<div class="number2">(097) 160 50 77</div>
 		</div>
-		
-		<div class="date">
-			<p class="schedule">Графік роботи: </p>
-			<div><p class="day">пн-пт: </p><div class="time">09.00 - 21.00</div></div>
-			<div><p class="day">сб: </p><div class="time">12.00 - 18.00</div></div>
-		</div>
+
 	</header>
 
-
-
-	<nav class="navigation">
+	<nav class="main_navigation">
 		
-		<ul class="list">
-			
-			<li><a href="#" class="links_pages StepToMain">Головна</a></li>
-			<li class="links_pages Alarm">Сигналізація
-				<ul>
-					<li class="AlarmOptions"><a href="Alarm/Wireless/Шаблон Каталогу/Wireless.html">Безпровідна<br> сигналізація</a></li>
-					<li class="AlarmOptions"><a href="#">Провідна<br> сигналізація</a></li>
-				</ul>
-			</li>
-			<li class="links_pages VideoSecurity">Відеонагляд
-				<ul>
-					<li class="VideoSecurityOptions"><a href="#">Відеореєстратор HDCVI</a></li>
-					<li class="VideoSecurityOptions"><a href="#">Відеокамера HDCVI</a></li>
-					<li class="VideoSecurityOptions"><a href="#">Відеореєстратор IP</a></li>
-					<li class="VideoSecurityOptions"><a href="#">Відеокамера IP</a></li>
-				</ul>
-			</li>
-			<li class="links_pages"><input type="search" placeholder="Пошук за назвою та артикулом" class="main_search" size="35"></li>
-		
-		</ul>
+		<div class="catalog">
+			<button class="catalogbtn">Каталог</button>
+			<ul class="list">
+				<li><span>Охоронна сигналізація</span><pre>    >  </pre>
+					<ul>
+						<li><a href="Alarm/Wireless/Шаблон Каталогу/Wireless.html">Сигналізація Ajax</a></li>
+						<li><a href="#">Сигналізація Satel</a></li>
+						<li><a href="#">Датчики</a></li>
+						<li><a href="#">Сирени</a></li>
+						<li><a href="#">Сигналізація SmartVision</a></li>
+					</ul>
+				</li>
+				<li><span>Відеонагляд</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Відеокамери HDCVI</a></li>
+						<li><a href="#">Відеореєстратори HDCVI</a></li>
+						<li><a href="#">Відеокамери IP</a></li>
+						<li><a href="#">Відеореєстратори HDCVI</a></li>
+					</ul>
+				</li>
+				<li><span>Контроль доступу</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Контролери</a></li>
+						<li><a href="#">Зчитувачі</a></li>
+						<li><a href="#">Електрозамки</a></li>
+						<li><a href="#">Кнопки виходу</a></li>
+						<li><a href="#">Додаткове обладнання</a></li>
+					</ul>
+				</li>
+				<li><span>Домофони</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Відеодомофони</a></li>
+						<li><a href="#">IP домофони</a></li>
+						<li><a href="#">Панель виклику</a></li>
+					</ul>
+				</li>
+				<li><span>Кабелі</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Сигнальний кабель</a></li>
+						<li><a href="#">Мережевий кабель</a></li>
+						<li><a href="#">Коаксіальний кабель</a></li>
+					</ul>
+				</li>
+				<li><span>Блоки живлення</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Імпульсні блоки живлення</a></li>
+						<li><a href="#">Безперебійне живлення</a></li>
+						<li><a href="#">Безперебійне живлення 220В</a></li>
+						<li><a href="#">Акумулятори</a></li>
+					</ul>
+				</li>
+				<li><span>Додаткове обладнання</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Роз'єми</a></li>
+						<li><a href="#">Жорсткі диски</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<form action="" class="main_form">
+			<input type="search" placeholder="Пошук товару..." size="100" class="main_search">
+			<button type="submit" class="button_search"><i class="fa fa-search"></i></button>
+		</form>
+
 	</nav>
-	<p class="steps"><a href="#" class="main_page StepToMain">Головна</a> > ...</p>
-	<h1 class="first_heading">Безпровідна сигналізація</h1>
 
+	</nav>
 </body>
 </html>
