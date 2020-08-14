@@ -27,7 +27,6 @@ header {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 50px;
-	/* margin-left: 0; */
 }
 .catalogbtn {
 	display: inline-block;
@@ -100,13 +99,12 @@ nav .list a {
 	margin: 0;
 	line-height: 2;
 	font-family: inherit;
-	/*margin-left: 10px;*/
-	/*color: #4B4B4B;*/
 	color: white;
 	font-family: "Arial";
 	font-weight: bold;
 	font-size: 23px;
 	background-color: #294E61;
+	z-index: 100;
 }
 .list>li {
 	position: relative;
@@ -149,4 +147,146 @@ nav .list a {
 }
 pre {
 	display: inline;
+}
+
+a:focus {
+	outline: none;
+	border: none;
+}
+.steps {
+	font-size: 15pt;
+	margin-left: 50px;
+	margin-top: 10px;
+	color: #B7B7B7;
+	font-family: "Arial";
+	font-weight: bold;
+}
+.steps a {
+	text-decoration: none;
+	color: #B7B7B7;
+}
+.steps a:last-child {
+	color: #3591C0;	
+}
+
+.heading_slider {
+	color: #414040;
+	margin-left: 318px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+}
+
+/* Слайдер */
+.slick-slider {
+	position: relative;
+	width: 100%;
+}
+.slick-slider img {
+	width: 175px;
+	height: 175px;
+}
+.slick-slider .product_name {
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	margin: 5px 0;
+}
+.slick-slider .product_price {
+	font-family: "Myriad Pro", sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	color: #215676;
+	margin: 5px 0;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+}
+
+/* Слайд */
+.slick-slide{
+	text-align: center;
+}
+.slick-slide:focus {
+	outline: none;
+	border: none;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+
+/* Стрелка */
+.slick-arrow {
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	z-index: 10;
+	border: none;
+	outline: none;
+	width: 60px;
+	height: 100px;
+	padding: 0;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	left: 25px;
+	background: url('Slider JS/Left Arrow.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	right: 25px;
+	background: url('Slider JS/Right Arrow.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки (булиты) */
+.slick-dots {
+	display: flex;
+	justify-content: center;
+}
+.slick-dots li {
+	display: inline-block;
+	margin: 0 10px;
+	list-style-type: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active button {
+	font-size: 0;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 15px;
+	height: 15px;
+	width: 15px;
+}
+.slick-dots li button:focus {
+	outline: none;
+	border: none;
+}
+
+/* Элемент точки */
+.slick-dots li button{
+	font-size: 0;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 15px;
+	height: 15px;
+	width: 15px;
 }
