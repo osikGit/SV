@@ -50,6 +50,7 @@ header {
 	border: 3px solid #666666;
 	background-color: white;
 	vertical-align: middle;
+	height: 63px;
 }
 .main_search {
 	border: 0;
@@ -59,6 +60,7 @@ header {
 	margin-left: 10px;
 	font-weight: 600;
 	color: #B2B1B1;
+	height: 63px;
 }
 .main_search::placeholder {
 	color: #B2B1B1;
