@@ -51,6 +51,7 @@ header {
 	border: 3px solid #666666;
 	background-color: white;
 	vertical-align: middle;
+	height: 63px;
 }
 .main_search {
 	border: 0;
@@ -60,6 +61,7 @@ header {
 	margin-left: 10px;
 	font-weight: 600;
 	color: #B2B1B1;
+	height: 63px;
 }
 .main_search::placeholder {
 	color: #B2B1B1;
@@ -150,6 +152,10 @@ nav .list a {
 pre {
 	display: inline;
 }
+a:focus {
+	outline: none;
+	border: none;
+}
 /*Оформлення відстеження твого місцезнаходження на сайті*/
 .steps {
 	font-size: 15pt;
@@ -184,18 +190,19 @@ pre {
 .testImg {
 	width: 450px;
 	height: 450px;
+	display: inline-block;
 }
 /*Розмітка фотографії*/
 
 /*Надаємо стилі ціні, дзвінку*/
+.img-info {
+	text-align: center;
+}
 .price {
 	color: #195C8A;
 	font-family: "Myriad Pro Bold";
 	font-size: 40px;
-	margin: 0;
-	margin-left: 150px;
-	margin-bottom: 40px;
-	margin-top: 10px;
+	margin: 30px 0;
 }
 .call {
 	color: #3F3D3D;
@@ -240,6 +247,7 @@ pre {
 	font-family: "Arial";
 	font-weight: bold;
 	font-size: 20px;
+	text-align: center;
 }
 figure img {
 	width: 150px;
@@ -248,44 +256,25 @@ figure img {
 .ImgMarkup {
 	width: 150px;
 	height: 150px;
+	display: inline-block;
 }
-figure {
-	margin-left: 70px;
-	width: 183px;
-	height: 206px;
-}
-.first figcaption a {
-	color: #3F3D3D;
+.fig-last-products a {
 	text-decoration: none;
-	margin-left: 30px;
-}
-.second figcaption a {
 	color: #3F3D3D;
-	text-decoration: none;
-	margin-left: 20px;
+	font-size: 22px;
 }
-.third figcaption a {
-	color: #3F3D3D;
-	text-decoration: none;
-}
-.first p {
+.fig-last-products p {
 	color: #195C8A;
 	margin: 0;
-	margin-left: 30px;
-	margin-top: 5px;
+	padding: 5px 0;
+	font-size: 22px;
 }
-.second p {
-	color: #195C8A;
-	margin: 0;
-	margin-left: 35px;
-	margin-top: 5px;
-}
-.third p {
-	color: #195C8A;
-	margin: 0;
-	margin-top: 5px;
-	margin-left: 35px;
-}
+
+/*
+color: #3F3D3D; - колір назви
+color: #195C8A; - колір ціни 
+*/
+
 /* Оформлення переглянутих товарів */
 
 /*Шрифти*/

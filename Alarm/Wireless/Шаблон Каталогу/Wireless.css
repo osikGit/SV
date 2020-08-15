@@ -51,6 +51,7 @@ header {
 	border: 3px solid #666666;
 	background-color: white;
 	vertical-align: middle;
+	height: 63px;
 }
 .main_search {
 	border: 0;
@@ -60,6 +61,7 @@ header {
 	margin-left: 10px;
 	font-weight: 600;
 	color: #B2B1B1;
+	height: 63px;
 }
 .main_search::placeholder {
 	color: #B2B1B1;
@@ -150,7 +152,10 @@ nav .list a {
 pre {
 	display: inline;
 }
-
+a:focus {
+	outline: none;
+	border: none;
+}
 
 /*Оформлення відстеження твого місцезнаходження на сайті*/
 .steps {
@@ -202,7 +207,7 @@ main {
 	flex-wrap: wrap;
 }
 figure {
-	margin-left: 155px;
+	margin-left: 200px;
 }
 
 /* Робимо відступи і розприділяємо вільне місце між товарами так, щоб получилось 5 рядів по 5 товарів на 1 сторінку */
@@ -212,6 +217,11 @@ figure>div {
 	width: 150px;
 	height: 150px;
 }
+figure figcaption p a {
+	width: 200px;
+	display: inline-block;	
+}
+
 /* Оформлення товарів, якими набиваємо сайт */
 
 /* Робимо по центру сторінки внизу сторінки, між якими будемо переключатись для перегляду товарів */
