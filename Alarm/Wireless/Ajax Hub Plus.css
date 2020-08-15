@@ -263,6 +263,10 @@ figure img {
 	color: #3F3D3D;
 	font-size: 22px;
 }
+.fig-last-products figcaption a {
+	width: 200px;
+	display: inline-block;
+}
 .fig-last-products p {
 	color: #195C8A;
 	margin: 0;
