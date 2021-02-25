@@ -1,22 +1,4 @@
-$(document).ready(function(){
- 	$('.slider').slick({
- 		slidesToShow: 5,
- 		slidesToScroll: 5,
- 		arrows: true,
- 		dots: true,
- 		responsive:[
- 			{
- 				breakpoint: 600,
- 				settings: {
- 					slidesToShow: 2,
- 					slidesToScroll: 2,
- 					arrows: false
- 				}
- 			}
- 		]
- 	});
- });
-
+let call = document.querySelector('.call')
 let list = document.querySelector('.list');
 let mainSections = document.querySelectorAll('.list > li > span');
 let subList = document.querySelectorAll('.list li ul');
@@ -28,7 +10,6 @@ let liOfMainList = document.querySelectorAll('.list > li')
 let firstSectionOfList = document.querySelector('.list > li')
 let special = document.querySelectorAll('.special')
 let allTags = document.querySelectorAll( 'body *' )
-
 
 
 
@@ -59,7 +40,8 @@ function changeSectionOnSubsection() {
 function bodyClick() {
 	
 	for (let i = 0; i < allTags.length; i++) {
-		if ((allTags[i].className == 'adapt_header') || (allTags[i].className == 'main_form') || (allTags[i].className == 'steps') || (allTags[i].className == 'heading_slider') || (allTags[i].className == 'slider') ){
+		if ((allTags[i].className == 'adapt_header') || (allTags[i].className == 'main_form') || (allTags[i].className == 'steps')){
+			console.log('TEST')
 			allTags[i].onclick = function() {
 				for (let i = 0; i < subList.length; i++) {
 					
@@ -105,5 +87,3 @@ if (window.matchMedia("(max-width: 600px)").matches){
 	test();
 	bodyClick();
 }
-
- 

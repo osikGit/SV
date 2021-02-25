@@ -4,18 +4,18 @@
 	<meta charset="UTF-8">
 	<title>Ajax Hub Plus</title>
 	<link rel="stylesheet" href="Ajax Hub Plus.css">
-	<link rel="stylesheet" href="../../Font Awesome/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header>
-		
+	<div class="adapt_header">
 		<div class="logo"><a href="../../Main.html"><img src="../../Logo.png" alt="Logo"></a></div>
 
 		<div class="header_numbers">
 			<div class="number1">(097) 160 50 77</div>
 			<div class="number2">(097) 160 50 77</div>
 		</div>
-
+	</div>
 </header>
 
 	<nav class="main_navigation">
@@ -23,24 +23,39 @@
 		<div class="catalog">
 			<button class="catalogbtn">Каталог</button>
 			<ul class="list">
-				<li><span>Охоронна сигналізація</span><pre>    >  </pre>
+				<li id = "0" class="special"><span>Відеоспостереження</span><pre>    >  </pre>
 					<ul>
-						<li><a href="#">Сигналізація Ajax</a></li>
+						<li><a href="#">IP камери Dahua</a></li>
+						<li><a href="#">IP камери GreenVision</a></li>
+						<li><a href="#">IP камери SmartVision</a></li>
+						<li><a href="#">IP реєстратори</a></li>
+					</ul>
+				</li>
+				<li id = "1"  class="special"><span>Охоронна сигналізація</span><pre>    >  </pre>
+					<ul>
+						<li><a href="Alarm/Wireless/Шаблон Каталогу/Wireless.html">Сигналізація Ajax</a></li>
 						<li><a href="#">Сигналізація Satel</a></li>
 						<li><a href="#">Датчики</a></li>
 						<li><a href="#">Сирени</a></li>
 						<li><a href="#">Сигналізація SmartVision</a></li>
 					</ul>
 				</li>
-				<li><span>Відеонагляд</span><pre>    >  </pre>
+				<li id = "2"  class="special"><span>Домофони</span><pre>    >  </pre>
 					<ul>
-						<li><a href="#">Відеокамери HDCVI</a></li>
-						<li><a href="#">Відеореєстратори HDCVI</a></li>
-						<li><a href="#">Відеокамери IP</a></li>
-						<li><a href="#">Відеореєстратори HDCVI</a></li>
+						<li><a href="#">Відеодомофони</a></li>
+						<li><a href="#">IP домофони</a></li>
+						<li><a href="#">Панель виклику</a></li>
 					</ul>
 				</li>
-				<li><span>Контроль доступу</span><pre>    >  </pre>
+				<li id = "3"  class="special"><span>Блоки живлення</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Імпульсні блоки живлення</a></li>
+						<li><a href="#">Безперебійне живлення</a></li>
+						<li><a href="#">Безперебійне живлення 220В</a></li>
+						<li><a href="#">Акумулятори</a></li>
+					</ul>
+				</li>
+				<li id = "4"  class="special"><span>Контроль доступу</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Контролери</a></li>
 						<li><a href="#">Зчитувачі</a></li>
@@ -49,29 +64,16 @@
 						<li><a href="#">Додаткове обладнання</a></li>
 					</ul>
 				</li>
-				<li><span>Домофони</span><pre>    >  </pre>
-					<ul>
-						<li><a href="#">Відеодомофони</a></li>
-						<li><a href="#">IP домофони</a></li>
-						<li><a href="#">Панель виклику</a></li>
-					</ul>
-				</li>
-				<li><span>Кабелі</span><pre>    >  </pre>
+				
+				<li id = "5"  class="special"><span>Кабелі</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Сигнальний кабель</a></li>
 						<li><a href="#">Мережевий кабель</a></li>
 						<li><a href="#">Коаксіальний кабель</a></li>
 					</ul>
 				</li>
-				<li><span>Блоки живлення</span><pre>    >  </pre>
-					<ul>
-						<li><a href="#">Імпульсні блоки живлення</a></li>
-						<li><a href="#">Безперебійне живлення</a></li>
-						<li><a href="#">Безперебійне живлення 220В</a></li>
-						<li><a href="#">Акумулятори</a></li>
-					</ul>
-				</li>
-				<li><span>Додаткове обладнання</span><pre>    >  </pre>
+				
+				<li id = "6"  class="special"><span>Додаткове обладнання</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Роз'єми</a></li>
 						<li><a href="#">Жорсткі диски</a></li>
@@ -80,10 +82,10 @@
 			</ul>
 		</div>
 		<form action="" class="main_form">
-			<input type="search" placeholder="Пошук товару..." size="100" class="main_search">
+			<input type="search" placeholder="Пошук товару..." class="main_search">
 			<button type="submit" class="button_search"><i class="fa fa-search"></i></button>
 		</form>
-
+		</div>
 	</nav>
 	<!-- Відслідковування сторінки, на якій ти знаходишся -->
 	<div class="steps">
@@ -93,14 +95,32 @@
 	<main>
 		<div class="product">
 			<!-- Ліва частина сторінки товару (Фотографія, ціна, "Для замовлення дзвонити") -->
+			
 			<div class="img-info">
-				<div class="testImg"><img src="Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus"></div>
-				<p class="price">5999 грн</p>
+				
+
+				<div class="slider">
+					<input type="radio" name='slide_switch' id='id1' checked='checked'>	
+					<label for="id1">
+						<div class="testImg"><img src="Photos/test.jpg" alt="Ajax Hub Plus" class='testImg'></div>
+					</label>					
+					<img class='test2' src="Photos/test.jpg">
+
+					<input type="radio" name='slide_switch' id='id2'>
+					<label for="id2">
+						<div class="testImg"><img src="Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus" class='testImg'></div>
+					</label>					
+					<img class='test2' src="Photos/Ajax Hub Plus.png">
+				</div>
+
+
+				<p class="price">1240$</p>
 				<p class="call">Для замовлення дзвонити</p>
 			</div>
+			
 			<!-- Центральна частина сторінки товару (Назва, артикул, х-ки) -->
 			<div class="char">
-				<h2 class="name">Ajax Hub Plus</h2>
+				<h2 class="name">IP Camera</h2>
 				<p class="art">Артикул: 0033</p>
 				<h3>Характеристики:</h3>
 				<div class="info">
@@ -135,5 +155,9 @@
 		</div>
 	</main>
 
+
+<script type="text/javascript" src="Ajax Hub Plus.js"></script>
+
 </body>
+
 </html>
