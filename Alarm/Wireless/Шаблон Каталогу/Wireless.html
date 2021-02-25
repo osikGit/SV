@@ -5,18 +5,19 @@
 	<title>Безпровідні сигналізації</title>
 	<link rel="stylesheet" href="Wireless.css">
 	<link rel="stylesheet" href="../../../Font Awesome/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 	<header>
-		
+		<div class="adapt_header">
 		<div class="logo"><a href="../../../Main.html"><img src="../../../Logo.png" alt="Logo"></a></div>
 
 		<div class="header_numbers">
 			<div class="number1">(097) 160 50 77</div>
 			<div class="number2">(097) 160 50 77</div>
 		</div>
-
+		</div>
 	</header>
 
 	<nav class="main_navigation">
@@ -24,24 +25,39 @@
 		<div class="catalog">
 			<button class="catalogbtn">Каталог</button>
 			<ul class="list">
-				<li><span>Охоронна сигналізація</span><pre>    >  </pre>
+				<li id = "0" class="special"><span>Відеоспостереження</span><pre>    >  </pre>
 					<ul>
-						<li><a href="#">Сигналізація Ajax</a></li>
+						<li><a href="#">IP камери Dahua</a></li>
+						<li><a href="#">IP камери GreenVision</a></li>
+						<li><a href="#">IP камери SmartVision</a></li>
+						<li><a href="#">IP реєстратори</a></li>
+					</ul>
+				</li>
+				<li id = "1"  class="special"><span>Охоронна сигналізація</span><pre>    >  </pre>
+					<ul>
+						<li><a href="Alarm/Wireless/Шаблон Каталогу/Wireless.html">Сигналізація Ajax</a></li>
 						<li><a href="#">Сигналізація Satel</a></li>
 						<li><a href="#">Датчики</a></li>
 						<li><a href="#">Сирени</a></li>
 						<li><a href="#">Сигналізація SmartVision</a></li>
 					</ul>
 				</li>
-				<li><span>Відеонагляд</span><pre>    >  </pre>
+				<li id = "2"  class="special"><span>Домофони</span><pre>    >  </pre>
 					<ul>
-						<li><a href="#">Відеокамери HDCVI</a></li>
-						<li><a href="#">Відеореєстратори HDCVI</a></li>
-						<li><a href="#">Відеокамери IP</a></li>
-						<li><a href="#">Відеореєстратори HDCVI</a></li>
+						<li><a href="#">Відеодомофони</a></li>
+						<li><a href="#">IP домофони</a></li>
+						<li><a href="#">Панель виклику</a></li>
 					</ul>
 				</li>
-				<li><span>Контроль доступу</span><pre>    >  </pre>
+				<li id = "3"  class="special"><span>Блоки живлення</span><pre>    >  </pre>
+					<ul>
+						<li><a href="#">Імпульсні блоки живлення</a></li>
+						<li><a href="#">Безперебійне живлення</a></li>
+						<li><a href="#">Безперебійне живлення 220В</a></li>
+						<li><a href="#">Акумулятори</a></li>
+					</ul>
+				</li>
+				<li id = "4"  class="special"><span>Контроль доступу</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Контролери</a></li>
 						<li><a href="#">Зчитувачі</a></li>
@@ -50,29 +66,16 @@
 						<li><a href="#">Додаткове обладнання</a></li>
 					</ul>
 				</li>
-				<li><span>Домофони</span><pre>    >  </pre>
-					<ul>
-						<li><a href="#">Відеодомофони</a></li>
-						<li><a href="#">IP домофони</a></li>
-						<li><a href="#">Панель виклику</a></li>
-					</ul>
-				</li>
-				<li><span>Кабелі</span><pre>    >  </pre>
+				
+				<li id = "5"  class="special"><span>Кабелі</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Сигнальний кабель</a></li>
 						<li><a href="#">Мережевий кабель</a></li>
 						<li><a href="#">Коаксіальний кабель</a></li>
 					</ul>
 				</li>
-				<li><span>Блоки живлення</span><pre>    >  </pre>
-					<ul>
-						<li><a href="#">Імпульсні блоки живлення</a></li>
-						<li><a href="#">Безперебійне живлення</a></li>
-						<li><a href="#">Безперебійне живлення 220В</a></li>
-						<li><a href="#">Акумулятори</a></li>
-					</ul>
-				</li>
-				<li><span>Додаткове обладнання</span><pre>    >  </pre>
+				
+				<li id = "6"  class="special"><span>Додаткове обладнання</span><pre>    >  </pre>
 					<ul>
 						<li><a href="#">Роз'єми</a></li>
 						<li><a href="#">Жорсткі диски</a></li>
@@ -81,10 +84,11 @@
 			</ul>
 		</div>
 		<form action="" class="main_form">
-			<input type="search" placeholder="Пошук товару..." size="100" class="main_search">
+			<input type="search" placeholder="Пошук товару..." class="main_search">
 			<button type="submit" class="button_search"><i class="fa fa-search"></i></button>
 		</form>
-
+		</div>
+		</div>
 	</nav>
 
 	<!-- Відслідковування сторінки, на якій ти знаходишся -->
@@ -94,7 +98,7 @@
 <!-- Набиваємо сторінку товарами (фотографії і підписи: назва і ціна) -->
 <main>
 	<figure>
-		<div><a href="../Ajax Hub Plus.html"><img src="../Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus" width="150" height="150"></a></div>
+		<div><a href="../Ajax Hub Plus.html"><img src="../Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus"></a></div>
 		<figcaption>
 			<p class="name"><a href="../Ajax Hub Plus.html">Ajax Hub Plus</a></p>
 			<p class="art">Артикул: 0033</p>
@@ -102,7 +106,7 @@
 		</figcaption>
 	</figure>
 		<figure>
-		<div><a href="../Ajax Button.html"><img src="../Photos/Ajax Button Big.png" alt="Ajax Button" width="150" height="150"></a></div>
+		<div><a href="../Ajax Button.html"><img src="../Photos/Ajax Button Big.png" alt="Ajax Button"></a></div>
 		<figcaption>
 			<p class="name test"><a href="../Ajax Button.html">Ajax Button</a></p>
 			<p class="art">Артикул: 0034</p>
@@ -110,7 +114,7 @@
 		</figcaption>
 	</figure>
 	<figure>
-		<div><a href="../Ajax KeyPad.html"><img src="../Photos/Ajax KeyPad.png" alt="Ajax KeyPad" width="150" height="150"></a></div>
+		<div><a href="../Ajax KeyPad.html"><img src="../Photos/Ajax KeyPad.png" alt="Ajax KeyPad"></a></div>
 		<figcaption>
 			<p class="name"><a href="../Ajax KeyPad.html">Ajax KeyPad</a></p>
 			<p class="art">Артикул: 0035</p>
@@ -118,7 +122,7 @@
 		</figcaption>
 	</figure>
 	<figure>
-		<div><a href="../Ajax Relay.html"><img src="../Photos/Ajax Relay.png" alt="Ajax Relay" width="150" height="150"></a></div>
+		<div><a href="../Ajax Relay.html"><img src="../Photos/Ajax Relay.png" alt="Ajax Relay"></a></div>
 		<figcaption>
 			<p class="name"><a href="../Ajax Relay.html">Ajax Relay</a></p>
 			<p class="art">Артикул: 0036</p>
@@ -126,174 +130,63 @@
 		</figcaption>
 	</figure>
 	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
+		<div><a href="../Ajax Hub Plus.html"><img src="../Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus"></a></div>
 		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
+			<p class="name"><a href="../Ajax Hub Plus.html">Ajax Hub Plus</a></p>
+			<p class="art">Артикул: 0033</p>
+			<p class="price">5999 грн</p>
 		</figcaption>
 	</figure>
+		<figure>
+		<div><a href="../Ajax Button.html"><img src="../Photos/Ajax Button Big.png" alt="Ajax Button"></a></div>
+		<figcaption>
+			<p class="name test"><a href="../Ajax Button.html">Ajax Button</a></p>
+			<p class="art">Артикул: 0034</p>
+			<p class="price">549 грн</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<div><a href="../Ajax KeyPad.html"><img src="../Photos/Ajax KeyPad.png" alt="Ajax KeyPad"></a></div>
+		<figcaption>
+			<p class="name"><a href="../Ajax KeyPad.html">Ajax KeyPad</a></p>
+			<p class="art">Артикул: 0035</p>
+			<p class="price">1589 грн</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<div><a href="../Ajax Relay.html"><img src="../Photos/Ajax Relay.png" alt="Ajax Relay"></a></div>
+		<figcaption>
+			<p class="name"><a href="../Ajax Relay.html">Ajax Relay</a></p>
+			<p class="art">Артикул: 0036</p>
+			<p class="price">789 грн</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<div><a href="../Ajax Hub Plus.html"><img src="../Photos/Ajax Hub Plus.png" alt="Ajax Hub Plus"></a></div>
+		<figcaption>
+			<p class="name"><a href="../Ajax Hub Plus.html">Ajax Hub Plus</a></p>
+			<p class="art">Артикул: 0033</p>
+			<p class="price">5999 грн</p>
+		</figcaption>
+	</figure>
+		<figure>
+		<div><a href="../Ajax Button.html"><img src="../Photos/Ajax Button Big.png" alt="Ajax Button"></a></div>
+		<figcaption>
+			<p class="name test"><a href="../Ajax Button.html">Ajax Button</a></p>
+			<p class="art">Артикул: 0034</p>
+			<p class="price">549 грн</p>
+		</figcaption>
+	</figure>
+	<figure>
+		<div><a href="../Ajax KeyPad.html"><img src="../Photos/Ajax KeyPad.png" alt="Ajax KeyPad"></a></div>
+		<figcaption>
+			<p class="name"><a href="../Ajax KeyPad.html">Ajax KeyPad</a></p>
+			<p class="art">Артикул: 0035</p>
+			<p class="price">1589 грн</p>
+		</figcaption>
+	</figure>
+
 	
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure >
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure>
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
-	<figure >
-		<div><a href="../Ajax Hub.html"><img src="../Photos/Ajax Hub.png" alt="Ajax Hub" width="150" height="150"></a></div>
-		<figcaption>
-			<p class="name"><a href="../Ajax Hub.html">Ajax Hub</a></p>
-			<p class="art">Артикул: 0039</p>
-			<p class="price">3499 грн</p>
-		</figcaption>
-	</figure>
 </main>
 	
 	<ul class="product-pages">
@@ -309,4 +202,5 @@
 		<li><a class="arrow right-arrow" href="#"></a></li>
 	</ul>
 	
+<script type="text/javascript" src="Wireless.js"></script>
 </body>
