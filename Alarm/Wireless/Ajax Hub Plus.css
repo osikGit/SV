@@ -1,0 +1,556 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	margin: 10px 10px 10px 0;
+	background-color: white;
+}
+.header_numbers {
+	font-family: "Times New Roman";
+	font-size: 1.5vw; /*30px*/
+	font-weight: bold;
+	display: inline-block;
+	float: right;
+	margin-top: 1%;
+	line-height: 1.2;
+	margin-right: 1%; /* 50px */
+	color: #294E61;
+}
+
+.logo {
+	margin-left: 2%; /*40px*/
+	width: 11.7%; /*220px*/
+	height: 100%; /*100px*/
+	display: inline-block;
+}
+
+.logo img {
+	width: 100%;
+	height: 100%;
+}
+
+.main_navigation {
+	display: block;
+}
+.catalog {
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 2.6%; 
+	width: 10%;
+}
+.catalogbtn {
+	display: inline-block;
+	color: white;
+	padding: 5%; /*10px*/
+	background-color: #294E61;
+	text-align: center;
+	font-family: "Yu gothic UI";
+	font-weight: 600;
+	font-size: 1.4vw; /*25px*/
+	line-height: 2;
+	position: relative;
+	outline: none;
+	border: 0;
+	height: 3.7vw;
+	width: 100%;
+}
+/* main_form.height < catalogbtn.height */
+.main_form {
+	display: inline-block;
+	margin-left: 0.5%; /*10px*/
+	border: 0.16vw solid #666666;/**/
+	background-color: white;
+	vertical-align: middle;
+	height: 3.5vw;
+	width: 85%;
+}
+.main_search {
+	float: left;
+	width: 80%;
+	border: 0;
+	padding: 0;
+	font-family: "Yu gothic UI";
+	font-size: 1.4vw; /*25px*/
+	margin-left: 10px;
+	font-weight: 600;
+	color: #B2B1B1;
+	height: 3.5vw;
+}
+.main_search::placeholder {
+	color: #B2B1B1;
+}
+.main_search:focus {
+	outline: none;
+	border: none;
+}
+.main_search::-webkit-search-decoration,
+.main_search::-webkit-search-cancel-button,
+.main_search::-webkit-search-results-button,
+.main_search::-webkit-search-results-decoration { 
+	display: none; 
+}
+.button_search {
+	float: right;
+	width: 10%;
+	margin-top: -0.16vw;
+	margin-right: -0.16vw;
+	height: 3.82vw;
+	padding: 0;
+	font-family: "Yu gothic UI";
+	font-weight: 600;
+	font-size: 1.4vw;
+	color: white;
+	border: none;
+	background-color: #294E61;
+	/* width: 175px; */
+}
+
+nav .list a {
+	text-decoration: none;
+	color: #4B4B4B;
+}
+.list {
+	display: none;
+	position: absolute;
+	background-color: white;
+}
+.catalog:hover ul {
+	display: block;
+	padding: 0;
+	margin: 0;
+	line-height: 2;
+	font-family: inherit;
+	color: white;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 1.3vw; /*23px*/
+	background-color: #294E61;
+	z-index: 100;
+}
+.list>li {
+	position: relative;
+}
+.list li span {
+	padding: 5px;
+	padding-left: 10px;
+	display: inline-block;
+	width: 300px;
+}
+.list>li:hover {
+	background-color: #224153;
+}
+.list li ul {
+	position: absolute;
+	top: -9999em;
+	opacity: 0;
+}
+.list li:hover ul {
+	opacity: 1;
+	top: 0;
+	margin-left: 0;
+	width: 355px;
+	left: 100%;
+	font-family: inherit;
+	font-size: 1.3vw; /*23px*/
+	padding: 0;
+	background-color: #294E61;
+	list-style-type: none;
+}
+.list li ul li a {
+	color: white;
+}
+.list li ul li {
+	padding: 5px;
+	padding-left: 10px;
+}
+.list li ul li:hover {
+	background-color: #224153;
+}
+pre {
+	display: inline;
+}
+
+a:focus {
+	outline: none;
+	border: none;
+}
+.steps {
+	font-size: 1.1vw; /* 15pt */
+	margin-left: 2.6%; /* 50px */
+	margin-top: 10px;
+	color: #B7B7B7;
+	font-family: "Arial";
+	font-weight: bold;
+}
+.steps a {
+	text-decoration: none;
+	color: #B7B7B7;
+}
+.steps a:last-child {
+	color: #3591C0;	
+}
+/*Оформлення відстеження твого місцезнаходження на сайті*/
+
+/*Оформлення головної частини сторінки товару*/
+
+/*Надаємо ділення сторінки на 3 частини*/
+.product{
+	display: flex;
+	justify-content: space-around;
+	align-items: stretch;
+	margin-top: 50px;
+}
+/*Надаємо ділення сторінки на 3 частини*/
+
+/*Розмітка фотографії*/
+.img-info img,
+.testImg {
+	/*width: 23vw;*/ /* 450px */
+	/*height: 23vw;*/ /* 450px */
+	/*display: inline-block;*/
+}
+/*Розмітка фотографії*/
+
+/*Надаємо стилі ціні, дзвінку*/
+.img-info {
+	text-align: center;
+}
+.price {
+	color: #195C8A;
+	font-family: "Myriad Pro";
+	font-weight: bold;
+	font-size: 2.1vw; /* 40px */
+	margin: 1vw 0; /* 20px */
+}
+.call {
+	color: #3F3D3D;
+	font-size: 1.9vw; /* 35px */ 
+	margin: 0;
+	font-family: "Arial";
+	font-weight: bold;
+}
+/*Надаємо стилі ціні, дзвінку*/
+
+/* Ліва частина, слайдер */
+
+.slider {
+	width: 33.5vw;
+	position: relative;
+	height: 33.5vw;
+}
+.slider>img {
+	position: absolute;
+	transition: all 0.5s;
+	top: 0;
+	left: 15%;
+
+}
+.slider input[name='slide_switch'] {
+	display: none;
+}
+.test2 {
+	width: 23.6vw;
+	height: 23.6vw;
+}
+.testImg{
+	width: 5.26vw;
+}
+.slider label {
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 1vw;
+	margin-top: 78%;
+	border: 0.2vw solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+.slider label img {
+	display: block;
+}
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+.slider input[name='slide_switch']:checked+label+img{
+	opacity: 1;
+	transform: scale(1);
+}
+
+
+/*Надаємо стилі центральній частині сторінки товару*/
+.name {
+	color: #3F3D3D;
+	font-size: 2.6vw; /* 50px */
+	font-family: "Arial";
+	font-weight: bold;
+	margin: 0;
+}
+.art {
+	color: #7A7979;
+	margin: 0;
+	font-family: "Myriad Pro";
+	font-style: italic;
+	font-size: 0.9vw;
+}
+.char h3 {
+	font-family: "Arial";
+	font-weight: bold;
+	color: #3F3D3D;
+	font-size: 1.6vw;
+}
+.info {
+	font-family: "Arial";
+	color: #3D3B3B;
+	line-height: 1.5;
+	font-size: 1vw; /* 20px */
+}
+/*Надаємо стилі центральній частині сторінки товару*/
+
+/*Оформлення переглянутих товарів*/
+.last-products {
+	color: #3F3D3D;
+	font-family: "Arial";
+	font-weight: bold;
+	font-size: 1.1vw; /* 20px */
+	text-align: center;
+}
+figure img {
+	width: 8vw; /* 150px */
+	height: 8vw; /* 150px */
+}
+.ImgMarkup {
+	width: 8vw; /* 150px */
+	height: 8vw;  /* 150px */
+	display: inline-block;
+}
+.fig-last-products {
+	margin-left: 0;
+	margin-right: 0;
+}
+.fig-last-products a {
+	text-decoration: none;
+	color: #3F3D3D;
+	font-size: 1.2vw;  /* 20px */
+}
+.fig-last-products figcaption a {
+	width: 200px;
+	display: inline-block;
+}
+.fig-last-products p {
+	color: #195C8A;
+	margin: 0;
+	padding: 5px 0;
+	font-size: 1.1vw;
+}
+
+/*
+color: #3F3D3D; - колір назви
+color: #195C8A; - колір ціни 
+*/
+
+/* Оформлення переглянутих товарів */
+
+/*Шрифти*/
+@font-face {
+font-family: "Arial Rounded MT Bold";  
+src: url("../../Fonts/Contacts.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
+
+@font-face {
+font-family: "Myriad Pro Bold";  
+src: url("../../Fonts/Date.otf") format("opentype"); 
+font-style: normal; 
+font-weight: normal;
+}
+
+@font-face {
+font-family: "Myriad Pro Regular";  
+src: url("../../Fonts/MyriadProRegular.otf") format("opentype"); 
+font-style: normal; 
+font-weight: normal;
+}
+/*Шрифти*/
+
+@media screen and (max-width: 600px) {
+/*Випадаюче меню*/
+	.catalog:hover .list {
+		font-size: 5vw;
+		width: 100%;
+		padding-bottom: 1vw;
+		position: relative;
+	}
+
+	.list li ul {
+		display: none;
+	}
+/*Випадаюче меню*/
+/*Хедер*/
+	header {
+		margin-bottom: 0;
+	}
+	.logo {
+		width: 40%;
+	}
+	.header_numbers {
+		font-size: 6vw;
+	}
+/*Хедер*/
+
+/*Навігаційне меню*/
+	.main_navigation {
+	display: flex;
+    flex-wrap: wrap;
+	}
+	.catalog {
+		flex-basis: 100%;
+		margin-left: 0;
+		order: 1;
+		margin-top: 10px;
+	}
+	.catalogbtn {
+		height: 15vw;
+		font-size: 6vw;
+		padding: 5px;
+	}
+	.main_form {
+		margin-top: 10px;
+		flex-basis: 100%;
+		margin-left: 0;
+		height: 15vw;
+		border: 3px solid #666666;
+	}
+	.main_search {
+		font-size: 5vw;
+		height: 15vw;
+		width: 60%;
+	}
+	.button_search {
+		font-size: 5vw;
+		height: 15.32vw;
+		width: 35%;
+	}
+	.steps {
+		font-size: 5vw;
+	}
+	.steps a {
+		padding-top: 3px;
+		display: inline-block; 
+	}
+
+/*Навігаційне меню*/
+
+
+	.product {
+		margin-top: 10px;
+		flex-wrap: wrap;
+	}
+	.img-info {
+		flex-basis: 100%;
+		height: 100%;
+	}
+/*Фото товару і дзвінок*/
+
+	div.slider {
+		display: inline-block;
+		margin: 0;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		position: relative;
+
+	}
+	.slider>img {
+		position: absolute;
+		left: 25%;
+	}
+	.test2 {
+		width: 50vw;
+		height: 50vw;
+
+	}
+	.testImg {
+		width: 20vw;
+		height: 20vw;
+	}
+	.slider label {
+		margin-top: 60vw;
+	}
+	.price {
+		font-size: 10vw;
+	}
+	.call {
+		font-size: 5vw;
+		text-align: left;
+	}
+
+/*Фото товару і ціна*/
+
+/*Характеристики товару*/
+	.char {
+		flex-basis: 100%;
+	}
+	.name {
+		font-size: 10vw;
+		text-align: center;
+	}
+	.art {
+		font-size: 3vw;
+		text-align: center;
+	}
+	.char h3 {
+		font-size: 6vw;
+		margin-top: 7px;
+		margin-left: 3vw;
+		margin-bottom: 7px;
+	}
+	.info {
+		font-size: 4vw;
+		margin-left: 3vw;
+	}
+
+/*Характеристики товару*/
+
+/*Переглянуті товари*/
+
+	.last-products {
+		font-size: 5vw;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.fig-last-products {
+		width: 33.3%;
+		text-align: center;
+		margin: 0;
+	}
+	.fig-last-products figcaption a {
+		width: 100%;
+	}
+	figure img {
+		width: 100%;
+		height: 100%;
+	}
+	.ImgMarkup {
+		width: 20vw;
+		height: 20vw;
+	}
+	.fig-last-products a {  /*назва*/
+		font-size: 4.5vw;
+	}
+	.fig-last-products p {  /*ціна*/
+		font-size: 5vw;
+	}
+
+/*Переглянуті товари*/
+
+
+}
